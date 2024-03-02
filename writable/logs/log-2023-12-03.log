@@ -1,0 +1,164 @@
+ERROR - 2023-12-03 19:26:47 --> mysqli_sql_exception: Unknown column 'sale_status' in 'where clause' in C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ace\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ace\app\Models\IndexPropertiesModel.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ace\app\Controllers\Front\HomeController.php(35): App\Models\IndexPropertiesModel->getLatestProp('sale')
+#6 C:\xampp\htdocs\ace\system\CodeIgniter.php(934): App\Controllers\Front\HomeController->index()
+#7 C:\xampp\htdocs\ace\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\HomeController))
+#8 C:\xampp\htdocs\ace\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ace\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-03 19:26:47 --> Unknown column 'sale_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = :sale_status:
+AND `property_type` = :property_type:
+ORDER BY `updated_at` DESC
+ LIMIT 3', [...], false)
+ 5 APPPATH\Models\IndexPropertiesModel.php(564): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Front\HomeController.php(35): App\Models\IndexPropertiesModel->getLatestProp('sale')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-03 19:34:00 --> mysqli_sql_exception: Unknown column 'updated_at' in 'order clause' in C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ace\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ace\app\Models\IndexPropertiesModel.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ace\app\Controllers\Front\HomeController.php(35): App\Models\IndexPropertiesModel->getLatestProp('sale')
+#6 C:\xampp\htdocs\ace\system\CodeIgniter.php(934): App\Controllers\Front\HomeController->index()
+#7 C:\xampp\htdocs\ace\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\HomeController))
+#8 C:\xampp\htdocs\ace\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ace\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-03 19:34:00 --> Unknown column 'updated_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = :sale_status:
+AND `property_type` = :property_type:
+ORDER BY `updated_at` DESC
+ LIMIT 3', [...], false)
+ 5 APPPATH\Models\IndexPropertiesModel.php(564): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Front\HomeController.php(35): App\Models\IndexPropertiesModel->getLatestProp('sale')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-03 19:34:02 --> mysqli_sql_exception: Unknown column 'updated_at' in 'order clause' in C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ace\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ace\app\Models\IndexPropertiesModel.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ace\app\Controllers\Front\HomeController.php(35): App\Models\IndexPropertiesModel->getLatestProp('sale')
+#6 C:\xampp\htdocs\ace\system\CodeIgniter.php(934): App\Controllers\Front\HomeController->index()
+#7 C:\xampp\htdocs\ace\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\HomeController))
+#8 C:\xampp\htdocs\ace\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ace\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-03 19:34:02 --> Unknown column 'updated_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = 0
+AND `property_type` = \'sale\'
+ORDER BY `updated_at` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `index_properties`
+WHERE `sale_status` = :sale_status:
+AND `property_type` = :property_type:
+ORDER BY `updated_at` DESC
+ LIMIT 3', [...], false)
+ 5 APPPATH\Models\IndexPropertiesModel.php(564): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Front\HomeController.php(35): App\Models\IndexPropertiesModel->getLatestProp('sale')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-03 19:39:32 --> mysqli_sql_exception: Table 'ace.sale_type' doesn't exist in C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ace\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `propert...', 0)
+#1 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `propert...')
+#2 C:\xampp\htdocs\ace\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `propert...')
+#3 C:\xampp\htdocs\ace\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `propert...', Array, false)
+#4 C:\xampp\htdocs\ace\app\Models\IndexPropertiesModel.php(122): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ace\app\Controllers\Front\PropertiesController.php(25): App\Models\IndexPropertiesModel->loadSubtype()
+#6 C:\xampp\htdocs\ace\system\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->index()
+#7 C:\xampp\htdocs\ace\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+#8 C:\xampp\htdocs\ace\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ace\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-03 19:39:32 --> Table 'ace.sale_type' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `property_type`
+FROM `sale_type`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `property_type`
+FROM `sale_type`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `property_type`
+FROM `sale_type`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `property_type`
+FROM `sale_type`', [], false)
+ 5 APPPATH\Models\IndexPropertiesModel.php(122): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Front\PropertiesController.php(25): App\Models\IndexPropertiesModel->loadSubtype()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

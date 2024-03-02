@@ -1,0 +1,65 @@
+
+CRITICAL - 2023-11-29 18:21:40 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', '0', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:22:23 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', '0', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:23:01 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', '0', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:23:11 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', '0', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:23:25 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', 'AF', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:23:27 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', 'DZ', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:23:29 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', 'DZ', '31', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-29 18:23:34 --> Call to undefined method App\Models\IndexPropertiesModel::builer
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\IndexPropertiesModel.php(264): CodeIgniter\Model->__call('builer', [])
+ 2 APPPATH\Controllers\Front\PropertiesController.php(134): App\Models\IndexPropertiesModel->getSearchProperty('', 'DZ', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Front\PropertiesController->searchPropertiesPage()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Front\PropertiesController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
